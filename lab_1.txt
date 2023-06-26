@@ -20,14 +20,14 @@ ID Generator Service
     </dependency>
 
 Update account
-1. Create an ReST API to update an acount. Here's the design:
-    PUT /account/<accountid>
+1. Create an ReST API to update an account. Here's the design:
+    PUT /account/<account_id>
     Header -- Content-Type: application/json
     {
         //reuse CreateAccountRequest
     }
 
-    NOTE: `PUT` means OVERIDING the whole resource with id <accountid>, PATCH means you are attempting to update the field/s in the body
+    NOTE: `PUT` means OVERRIDING the whole resource with id <account_id>, PATCH means you are attempting to update the field/s in the body
 2. Response is:
     200 OK
     {
@@ -35,8 +35,8 @@ Update account
     }
 
 Delete account
-1. Create an ReST API to delete an acount. Here's the design:
-    PUT /account/<accountid>
+1. Create an ReST API to delete an account. Here's the design:
+    DELETE /account/<account_id>
 2. Response is:
     204 NO CONTENT
 
